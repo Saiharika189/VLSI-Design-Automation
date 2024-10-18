@@ -1,0 +1,20 @@
+Scripts:
+sta_parser.py --> Script to parse the netlist and lib files
+sta_main.py --> Script to do topological traversal
+
+Scripts Usage:
+
+python3.7 sta_parser.py --read_ckt 'Circuit file path' --read_nldm 'NLDM file path' --delays --slews
+
+--read_ckt 'BENCH file path' -> Optional argument used to read a given ckt file
+--read_nldm 'NLDM file path' -> Optional argument used to read a lib file
+--delays -> optional argument to create delay_lut file
+--slews -> optional argument to create slew_lut file
+Notes: 
+-> One of --read_ckt or --read_nldm argument is needed for the script to do anything.
+-> --delays and --slews arguments work only with --read_nldm argument
+
+python3.7 sta_main.py --read_ckt 'Circuit file path' --read_nldm 'NLDM file path'
+
+--read_ckt 'BENCH file path' -> Required argument used to give a ckt file path
+--read_nldm 'NLDM file path' -> Required argument used to give a lib file path
