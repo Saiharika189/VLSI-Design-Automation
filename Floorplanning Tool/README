@@ -1,0 +1,9 @@
+Scripts:
+floorplanner.py --> One script to do parsing and floorplanning using simulated annealing algorithm
+
+Scripts Usage:
+
+python3.7 floorplanner.py -input 'blocks bench file path' -output 'output file path'
+
+-input 'bench file path' --> Required argument to give input bench file path
+-output 'output file path' --> Required argument to give output file path
